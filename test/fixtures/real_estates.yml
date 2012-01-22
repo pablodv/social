@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  operation: MyString
+  kind: MyString
+  address: MyString
+  max_price: 1
+  min_price: 1
+  beds: 1
+  description: MyText
+  user_id: 1
+
+two:
+  operation: MyString
+  kind: MyString
+  address: MyString
+  max_price: 1
+  min_price: 1
+  beds: 1
+  description: MyText
+  user_id: 1

@@ -1,0 +1,24 @@
+= f.label :operation
+= f.select :operation, ["Buy", "Sell", "Rent"], :prompt => true
+
+= f.label :kind
+= f.select :kind, ["Single Family Home", "Condo/Townhouse", "Multy-Family Home", "Land"], :prompt => true
+
+= f.label :address
+= f.text_field :address
+
+= f.label :beds
+= f.select :beds, [1, 2, 3, 4, 5], :prompt => true
+
+= f.label :min_price
+= f.text_field :min_price
+
+= f.label :max_price
+= f.text_field :max_price
+
+= f.label :description
+= f.text_area :description
+
+= f.submit
+
+= link_to 'cancel', collection_path
