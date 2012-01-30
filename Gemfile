@@ -6,6 +6,7 @@ gem 'sqlite3'
 gem 'devise'
 gem 'inherited_resources'
 gem 'slim'
+gem 'paperclip'
 
 gem 'skeleton-rails'
 
