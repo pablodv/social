@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120130000226) do
+ActiveRecord::Schema.define(:version => 20120202005544) do
+
+  create_table "media", :force => true do |t|
+    t.integer  "real_estate_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "media", ["real_estate_id"], :name => "index_media_on_real_estate_id"
 
   create_table "real_estates", :force => true do |t|
     t.string   "operation"

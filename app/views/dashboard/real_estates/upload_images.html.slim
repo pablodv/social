@@ -1,0 +1,9 @@
+h4 Upload the images
+p Select until five images that you want upload!
+
+= form_for [:dashboard, @real_estate], :html => { :multipart => true } do |f|
+  = f.fields_for :medias do |build|
+    = build.file_field :image
+    br/
+
+  p= f.submit "Upload Images"
